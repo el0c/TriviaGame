@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Trivia Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main class="container">
+        <section class="page"> 
+            <!-- Instruction Page -->
+            <h2>Instructions</h2>
+
+            <p>10 Questions will be presented to you.</p>
+            <p>Each question will be timed, try to answer them as quickly as possible!</p>
+
+            <button class="page_next" id="button_start">Start</button>
+        </section>
+
+
+        <!-- Game Page -->
+        <section class="page" id="quiz">
+            <hgroup>
+                <h1>Trivia Game Header</h1>
+                <h3 id="timer">Time Remaining: <strong><span id="timer"></span></strong></h3>
+            </hgroup>
+                <em >
+                    <p id="question">Place Holder Quesiton Text</p>
+                </em>
+            <section id="answers">
+                <form>
+                    <input type="radio" name="answer" value="a"><span> Answer 1</span><br>
+                    <input type="radio" name="answer" value="b"><span> Answer 2</span><br>
+                    <input type="radio" name="answer" value="c"><span> Answer 3</span><br>
+                    <input type="radio" name="answer" value="d"><span> Answer 4</span>
+                </form>
+            </section>
+        </section>
+
+        <!-- Results -->
+        <section class="page">
+            <h2>Results:</h2>
+            <p>You got <span id="correctAnswers"></span> correct.</p>
+
+            <button class="page_next" id="button_restart">Start over</button>
+        </section>
+    </main>
+
+    
+</body>
+</html>
